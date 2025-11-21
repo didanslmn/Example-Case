@@ -6,6 +6,7 @@ func main() {
 	var name string = "budi"
 	var umur int = 20
 
+	// short variable declaration
 	alamat := "Pemalang"
 	suhu := 29.8
 
