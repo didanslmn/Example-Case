@@ -46,8 +46,8 @@ func (r *UserRepository) GetByID(id int) (*User, error) {
 
 func main() {
 	// koneksi ke postgres
-	connStr := "postgres://postgres:postgres@localhost:5432/postgres?sslmode=disable"
-	db, err := sql.Open("postgres", connStr)
+	connStr := "postgres://postgres:godgame357@localhost:5433/user_management?sslmode=disable"
+	db, err := sql.Open("pgx", connStr)
 	if err != nil {
 		panic(err)
 	}
